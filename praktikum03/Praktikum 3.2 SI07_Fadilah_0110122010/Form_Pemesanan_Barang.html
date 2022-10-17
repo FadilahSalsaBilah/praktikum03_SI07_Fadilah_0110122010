@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Caca Store.com</title>
+
+    <style type="text/css">
+        body {
+            background-color: pink;
+            font-family: sans-serif;
+        }
+
+        .menu{
+            border:1px solid white;
+            border-width:1px 0;
+            list-style:none;
+            margin: 0;
+            padding:0;
+            text-align:center;
+            background: palevioletred;
+        }
+        
+        .menu li{
+            display:inline;
+            color: white;
+        }
+        
+        .menu li a:hover {
+            background: white;
+            color: palevioletred;
+            text-decoration: underline;
+        }
+        
+        .menu a{
+            display:inline-block;
+            padding:10px;
+            margin-inline: 50px;
+            color:white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        form {
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Form_Pemesanan_Barang.html">Home</a></li>
+            <li>|</li>
+            <li><a href="#">Generate Link</a></li>
+            <li>|</li>
+            <li><a href="#">Transaction History</a></li>
+            <li>|</li>
+            <li><a href="#">Policy</a></li>
+            <li>|</li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <form action="Hasil_Form_Pemesanan_Barang.html" method="post">
+        <table>
+            <tr><td><img src="image/x.png" width="175px"></td></tr>
+            <tr><td><input type="file" value="Upload Picture"></td></tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>Title Here: </td>
+                <td><input type="text" placeholder="Samsung Galaxy Z Flip4 5G $975" required></td>
+            </tr>
+
+            <tr>
+                <td>Description: </td>
+                <td><textarea cols="20" rows="4" placeholder="Year: 2022 Model: Galaxy Z Flip4 5G Condition: NEW, from Samsung OfficialStore"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td>Account Number: </td>
+                <td><input type="number" placeholder="000-000-000-0" required></td>
+            </tr>
+            
+            <tr>
+                <td>Bank: </td>
+                <td><select>
+                        <option>BNI</option>
+                        <option>BCA</option>
+                        <option>BSI</option>
+                        <option>BRI</option>
+                        <option>BTN</option>
+                        <option>MANDIRI</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>Account Holder: </td>
+                <td><input type="text" placeholder="Name Here" required></td>
+            </tr>
+        
+            <tr>
+                <td>Transaction: </td>
+                <td><select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p>* if the transaction is for 3 person, choose 3 from the drop-drown list</p>
+                <p><input type='checkbox' value='tomobile' checked='checked'/>Send to Mobile Phone</p>
+                <p><input type='checkbox' value='toemail' checked='checked'/>Send To Email</p></td>
+
+            <tr>
+                <td>Send to Mobile Phone: </td>
+                <td><input type="tel" required></td>
+            </tr>
+
+            <tr>
+                <td>Send to Email: </td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <td><input type="submit" name="submit" value="Generate Nabr Link" style="color: white; background-color: green;"/></td>
+        </table>
+    </form>
+    <footer style="text-align: center;">
+        <hr color="white">
+        <p>Copyright &copy; 2022 Fadilah Salsa Bilah.</p>
+    </footer>
+</body>
+</html>

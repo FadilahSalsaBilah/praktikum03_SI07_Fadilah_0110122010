@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Caca Store2.com</title>
+
+    <style type="text/css">
+        body {
+            background-color: pink;
+            font-family: sans-serif;
+        }
+
+        .menu {
+            border: 1px solid white;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: palevioletred;
+        }
+
+        .menu li {
+            display: inline;
+            color: white;
+        }
+
+        .menu li a:hover {
+            background: white;
+            color: palevioletred;
+            text-decoration: underline;
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 10px;
+            margin-inline: 50px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        img {
+            width: 225px;
+            margin-right: 125px;
+        }
+
+        form {
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Form_Pemesanan_Barang.html">Home</a></li>
+            <li>|</li>
+            <li><a href="#">Register</a></li>
+            <li>|</li>
+            <li><a href="#">Transaction History</a></li>
+            <li>|</li>
+            <li><a href="#">Policy</a></li>
+        </ul>
+    </nav>
+
+    <form>
+        <img src="image/samsung.png" alt="Samsung Galaxy Z Flip4 5G">
+        <table>
+            <tr>
+                <td>Title Here: </td>
+                <td>Samsung Galaxy Z Flip4 5G $975</td>
+            </tr>
+
+            <tr>
+                <td>Description: </td>
+                <td>Year: 2022<br>
+                    <label>Model: Galaxy Z Flip4 5G</label><br>
+                    <label>Condition: NEW, from Samsung Official Store</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Total Amount: </td>
+                <td>$975</td>
+            </tr>
+            
+            <tr>
+                <td>Pay to: </td>
+                <td>123-666-123-1</td>
+            </tr>
+
+            <tr>
+                <td>Payment Type: </td>
+                <td><select>
+                        <option>Go-Pay</option>
+                        <option>OVO</option>
+                        <option>DANA</option>
+                        <option>ShoopePay</option>
+                        <option>LinkAja</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>Account Holder: </td>
+                <td><input type="text" placeholder="Name Here" required></td>
+            </tr>
+
+            <tr>
+                <td>Account No: </td>
+                <td>
+                    <input type="number" placeholder="000-000-000-0" required>
+                    <p><input type='checkbox' value='tomobile' checked='checked' />Send to Mobile Phone</p>
+                    <p><input type='checkbox' value='toemail' checked='checked' />Send To Email</p>
+                </td>
+
+            <tr>
+                <td>Send to Mobile Phone: </td>
+                <td><input type="tel" required></td>
+            </tr>
+
+            <tr>
+                <td>Send to Email: </td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <td><input type="submit" name="submit" value="Pay using QuidLink"
+                    style="color: white; background-color: green;"/></td>
+        </table>
+    </form>
+    <footer style="text-align: center;">
+        <hr color="white">
+        <p>Copyright &copy; 2022 Fadilah Salsa Bilah.</p>
+    </footer>
+</body>
+</html>
